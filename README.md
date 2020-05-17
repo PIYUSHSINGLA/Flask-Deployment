@@ -61,8 +61,11 @@ Just paste http://127.0.0.1:5000/ (or) http://localhost:5000 on browser and pres
 The project has four major parts:
 
 __1. model.py__ — This contains code for our Machine Learning model to predict.
+
 __2. app.py__ — This contains Flask APIs that receives details through GUI or API calls, computes the predicted value based on our model and returns it.
+
 __3. template__ — This folder contains the HTML template (index.html) to allow user to enter detail and displays the predicted results.
+
 __4. static__ — This folder contains the css folder with style.css file which has the styling required for out index.html file.
 
 #### Other Tools and Libraries to download and install:
