@@ -30,17 +30,17 @@ Python pickle module is used for serializing and de-serializing a Python object 
 
 The flask code can be explained in three sections:
 
-1. __Loading the saved model:__
+__1. Loading the saved model:__
 
 We load the model.pkl file and initialize the flask app.
    
-2. __Redirecting the API to the home page index.html:__
+__2. Redirecting the API to the home page index.html:__
 
 After initializing the app, we have to tell Flask what we want to do when the web page loads. The line @app.route("/", methods = ["GET","POST"]) tells Flask what to do when we load the home page of our website.
 
 We use @app.route(‘/’) to define functions which are used to redirect them into any number of URI with respect to the API. So, when you start the flask server, it redirects to index.html file by default in our case.
 
-3. __Redirecting the API to predict the result__
+__3. Redirecting the API to predict the result__
 
 'GET' takes the input/arguments from query string in the URL (starting after ?).
 'POST' request, it will be reading the input values from request.form.values(). 
@@ -49,7 +49,7 @@ Now that we have the input values in the variable, we will convert it into an ar
 
 The {{ prediction_text }} placeholder in the HTML code will be used to hold the results in our index.html file.
 
-4. __Starting the flask server__
+__4. Starting the flask server__
 
 This will call app.run() and run our web page locally, hosted on your computer.
 
@@ -60,13 +60,13 @@ Just paste http://127.0.0.1:5000/ (or) http://localhost:5000 on browser and pres
 
 The project has four major parts:
 
-1. __model.py__ — This contains code for our Machine Learning model to predict.
-2. __app.py__ — This contains Flask APIs that receives details through GUI or API calls, computes the predicted value based on our model and returns it.
-3. __template__ — This folder contains the HTML template (index.html) to allow user to enter detail and displays the predicted results.
-4. __static__ — This folder contains the css folder with style.css file which has the styling required for out index.html file.
+__1. model.py__ — This contains code for our Machine Learning model to predict.
+__2. app.py__ — This contains Flask APIs that receives details through GUI or API calls, computes the predicted value based on our model and returns it.
+__3. template__ — This folder contains the HTML template (index.html) to allow user to enter detail and displays the predicted results.
+__4. static__ — This folder contains the css folder with style.css file which has the styling required for out index.html file.
 
-### Other Tools and Libraries to downlaod and install:
+#### Other Tools and Libraries to download and install:
 
-1. [__FLASGGER__](https://github.com/flasgger/flasgger)
-2. [__SWAGGER__](https://swagger.io/)
-3. [__POSTMAN__](https://www.postman.com/)
+1. [___FLASGGER___](https://github.com/flasgger/flasgger)
+2. [___SWAGGER___](https://swagger.io/)
+3. [___POSTMAN___](https://www.postman.com/)
